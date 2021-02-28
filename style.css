@@ -51,7 +51,7 @@ body{
 .menu-toggle div{
     background-color: rgb(247, 234, 234); /* #ccc */
     border-radius: 25px;
-    box-shadow: opx 3px 13px rgba(0,0,0,.3);
+    box-shadow: 0px 3px 13px rgba(0,0,0,.3);
     height: 7px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(.13,.24,.35,1.64);
@@ -94,6 +94,7 @@ body{
     text-align: center;
     text-transform: uppercase;
 }
+
 
 .main-nav-list::before,
 .main-nav-list::after {
@@ -141,27 +142,27 @@ body{
 
 /************* Style the nav elements when active. ***********************/
 .masthead.active h1{
-    text-shadow: 0px 3px 3px rgba(0,0,0,0,.4);
+    text-shadow: 0px 3px 3px rgba(0,0,0,.4);
 }
 
 .menu-toggle.active .one{
-    box-shadow: 0px 3px 13px rgba(0,0,0,0,.4);
+    box-shadow: 0px 3px 13px rgba(0,0,0,.4);
     transform: translate(0, 14px) rotate(45deg);
 }
 
-.menu-toggle.active two{
+.menu-toggle.active .two{
     background-color: transparent;
     box-shadow: none;
-    transform: translate(-55px);
+    transform: translateX(-55px);
 }
 
 .menu-toggle.active .three{
-    box-shadow: 0px 3px 13px rgba(0,0,0,0,.4);
+    box-shadow: 0px 3px 13px rgba(0,0,0,.4);
     transform: translate(0, -14px) rotate(-45deg);
 }
 
 .main-nav-list.active::before,
-.main-nav-list::after{
+.main-nav-list.active::after{
     width: 25vw;
 }
 
@@ -170,7 +171,7 @@ body{
     transform: translate(-50%, -50%);
     transition-delay: 560ms;
     transition-duration: 240ms;
-    transition-timing-function: cubic-bezier(.1,.2,.3,1.4);
+    transition-timing-function: cubic-bezier(.1, .2, .3, 1.4);
 }
 
 .main-nav-list.active a{
